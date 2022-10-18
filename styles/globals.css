@@ -1,26 +1,81 @@
-html,
-body {
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
+
+body {
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Nunito";
+}
+
+
 a {
-  color: inherit;
+  color: #333;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+a:hover{
+  color: #4949ff;
+  cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 15px 10px 25px;
+  height: 6vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 20px;
+}
+
+nav .logo {
+  margin-right: auto;
+}
+
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 70vh;
+}
+
+footer {
+  text-align: center;
+  height: 4vh;
+  line-height: 60px;
+  color: rgb(88, 88, 88);
+  border-top: 1px solid #ddd;
+}
+
+
+/* 404 page */
+
+.not-found{
+  text-align: center;
+  height: 70vh;
+}
+
+.not-found h2{
+  margin: 20px;
+}
+.not-found a{
+  color: #4949ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.not-found a:hover{
+  text-decoration: underline;
 }
